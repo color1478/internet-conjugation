@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023202076_이제호_3주차_과제</title>
+</head>
+<style>
+    table, td, th, tr{
+        border: 1px solid #000000;
+    }
+</style>
+
+<body>
+    <h1>bts Music Video</h1>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>video</th>
+            <th>subject</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name = "video" value="boy_with_luv"> </td>
+            <td><img src="./img/boy with luv.png" alt="img" style="width: 300px;"></td>
+            <td>Boy with Luv</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name = "video" value="dynamite"> </td>
+            <td><img src="./img/dynamite.png" alt="img" style="width: 300px;"></td>
+            <td>Dynamite</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="button" value="click" onclick="submitForm()">
+            </td>
+
+        </tr>
+    </table>
+</body>
+
+<script>
+    function submitForm() {
+        const selectedVideo = document.querySelector('input[name="video"]:checked');
+        
+        if (selectedVideo) {
+            const videoValue = selectedVideo.value;
+            
+            if (videoValue === "boy_with_luv") {
+                window.location.href = "./week3_2.html"; 
+            } else if (videoValue === "dynamite") {
+                window.location.href = "./week3_3.html"; 
+            }
+        }
+        else {
+            alert("버튼 하나라도 클릭하세요");
+        }
+    }
+</script>
+</html>
