@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:focus{
+        color: red;
+    }
+    input:disabled+label{
+        color: green;
+
+    }
+</style>
+<body>
+    <input type="text" name="id" id="ch"><label for="ch">ID</label>
+    <br>
+    취미 : <input type="checkbox" name="hobbys" id="h1">
+    <label for="h1">음악</label>&nbsp;&nbsp;&nbsp;
+
+    <input type="checkbox" name="hobbys" id="h2">
+    <label for="h2">운동</label>&nbsp;&nbsp;&nbsp;
+
+    <input type="checkbox" name="hobbys" id="h3" disabled>
+    <label for="h3">컴퓨터</label>&nbsp;&nbsp;&nbsp;
+</body>
+</html>

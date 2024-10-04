@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        h1:hover {
+            color: blueviolet;
+            font-size: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        input[type="text"], input[type="password"], textarea, select {
+            margin: 5px 0;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            color: red;
+        }
+
+        input[type="radio"] + label {
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:checked + label {
+            color: red;
+        }
+
+        textarea:focus {
+            background-color: lightgray;
+        }
+
+        .phone-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-group select, .phone-group input {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입양식</h1>
+    <form>
+        <ul>
+            <li>
+                <label for="userid">-아이디</label>
+                <input type="text" id="userid" name="userid" placeholder="7자 이상">
+            </li>
+
+            <li>
+                <label for="password">-비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호">
+            </li>
+
+            <li>
+                <label for="confirm_password">-비밀번호 확인</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="비밀번호 확인">
+            </li>
+
+            <li>
+                <label for="name">-이름</label>
+                <input type="text" id="name" name="name">
+            </li>
+
+            <li>
+                <label>-성별</label>
+                <input type="radio" id="female" name="gender" value="여성">
+                <label for="female">여성</label>
+                <input type="radio" id="male" name="gender" value="남성">
+                <label for="male">남성</label>
+            </li>
+
+            <li>
+                <label for="phone">-전화번호</label>
+                <div class="phone-group">
+                    <select id="phone1" name="phone1">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="010">010</option>
+                    </select> - 
+                    <input type="text" id="phone2" name="phone2" maxlength="4"> - 
+                    <input type="text" id="phone3" name="phone3" maxlength="4">
+                </div>
+            </li>
+
+            <li>
+                <label for="email">-이메일</label>
+                <input type="text" id="email" name="email"> @
+                <select name="email_provider">
+                    <option value="01">선택</option>
+                    <option value="02">naver.com</option>
+                    <option value="03">gmail.com</option>
+                    <option value="04">github.io</option>
+                </select>
+            </li>
+
+            <li>
+                <label for="introduction">-자기소개</label>
+                <textarea id="introduction" name="introduction" rows="4" cols="50" maxlength="50" placeholder="50자 이내로"></textarea>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
