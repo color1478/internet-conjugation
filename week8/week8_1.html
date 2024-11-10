@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            color: white;
+        }
+        .header {
+            background-color: #1a1a80;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #logo img {
+            width: 50px;
+            height: auto;
+        }
+        #top-menu {
+            font-size: 14px;
+        }
+        #top-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .main {
+            background-color: #1a1a80;
+        }
+        #main_menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a80;
+
+        }
+        #main_menu li {
+            margin: 10px 15px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        .background-image {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .background-image img {
+            width: 100%;
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+        }
+        #title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-10%, -200%);
+            font-size: 36px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #1a1a80;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div id="top-menu">
+            <a href="#">HOME</a> | 
+            <a href="#">NOTICE</a> | 
+            <a href="#">JOIN</a> | 
+            <a href="#">LOGIN</a>
+        </div>
+    </div>
+    
+    <div class="main">
+        <ul id="main_menu">
+            <li>INSTODUCE</li>
+            <li>PRODUCT</li>
+            <li>RESERVE</li>
+            <li>SERVICE</li>
+            <li>NEWS</li>
+        </ul>
+
+        <div class="background-image">
+            <img src="./img/backimg.jpeg" alt="">
+            <div id="title">세계를 선도하는 IT 기업</div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="name">KWU COMPANY</p>
+    </footer>
+</body>
+</html>

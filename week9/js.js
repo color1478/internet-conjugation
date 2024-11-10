@@ -1,0 +1,1 @@
+Document.write("내부js");

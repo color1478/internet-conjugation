@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 안내</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .item {
+            margin: 10px;
+            padding: 10px;
+
+            text-align: center;
+            float: left;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+            color: green;
+        }
+        .content {
+            font-weight: 600;
+            color: rgba(0,0,0,0.5);
+        }
+        .price, .price2 {
+            color: red;
+            font-weight: bold;
+        }
+
+        .price {
+            text-decoration: line-through;
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        }
+
+        span {
+            color: green;
+            font-variant: small-caps;
+            font-size: 1.5em;
+        }
+
+        hr {
+            border: 3px solid #EFB030;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-shadow: 5px 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1><span>Flower</span> 상품 안내</h1>
+    <hr>
+    <div id="product" class="container">
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="카네이션">
+            <div class="title">카네이션</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="라벤더">
+            <div class="title">라벤더</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="백합">
+            <div class="title">백합</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="장미">
+            <div class="title">장미</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="해바라기">
+            <div class="title">해바라기</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+        <div class="item">
+            <img src="./img/flower-8140215_1280.webp" alt="튤립">
+            <div class="title">튤립</div>
+            <div class="content">원산지: 국산, 아름다운 꽃을 선물해 보세요.</div>
+            <div class="price">가격: 30,000원</div>
+            <div class="price2">할인가: 20,000원</div>
+        </div>
+    </div>
+</body>
+</html>
