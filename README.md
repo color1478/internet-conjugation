@@ -1,1 +1,1 @@
-##kwu-internet-conjugation
+## kwu-internet-conjugation
