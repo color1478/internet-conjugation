@@ -1,1 +1,1 @@
-kwu 인터넷 활용 자료
+## kwu-internet-conjugation
