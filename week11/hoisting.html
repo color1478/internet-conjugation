@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startcount()">시작</button>
+    <button onclick="stopcount()">정지</button>
+    <p id = "counter">start : 0</p>
+
+    <script>
+        let counter = 0;
+
+        let counterInterval;
+
+        function startcount() {
+            counterInterval = setInterval(
+                function() {
+                    counter++;
+                    document.getElementById("counter").innerText =`start : ${counter}`;
+                }, 1000
+            );
+
+        }
+
+        function stopcount () {
+            clearInterval(counterInterval);
+            document.getElementById("counter").innerText =`start : 0`;
+
+        }
+
+
+        //타이머 정지 만들기
+    </script>
+</body>
+</html>
